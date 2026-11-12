@@ -1,0 +1,8 @@
+.env
+.env.*
+.local/
+sources/
+source-catalog*.json
+*.log
+__pycache__/
+*.pyc
