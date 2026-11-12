@@ -8,6 +8,8 @@ Only `public/` is published. `public/index.html` links back to the player; `robo
 
 - `public/media/streams-v5/`: BIRDBRAIN and Forever HLS masters, renditions, fragments and compact compatibility MP4s.
 - `public/media/streams-v6/`: 马 (Ma), with the supplied Japanese-version picture aligned to the Chinese-song timeline, separate Chinese original/instrumental tracks, and 360p/720p/1080p HLS plus a compatibility MP4.
+- `public/media/streams-v7/`: SLOW DANCING IN THE DARK, rebuilt directly from the original music video at its native frame rate, with higher-bitrate 720p/1080p renditions.
+- `public/media/streams-v8/`: Breathe, using the original music video at native 24 fps, with opening/end frame holds matching the existing karaoke soundtrack timeline.
 - `public/audio/`: aligned, prepared AAC/M4A soundtracks referenced by the main catalog.
 - `scripts/check-public.py`: read-only validation of public file boundaries and sizes; emits JSON.
 - `.github/workflows/pages.yml`: pinned GitHub Actions workflow that validates and deploys only `public/`.
