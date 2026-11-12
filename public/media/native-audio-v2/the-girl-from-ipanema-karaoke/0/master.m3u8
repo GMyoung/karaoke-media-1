@@ -1,0 +1,15 @@
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-INDEPENDENT-SEGMENTS
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="sound",NAME="Vocals 0%",DEFAULT=YES,AUTOSELECT=YES,CHANNELS="2",URI="https://gmyoung.github.io/karaoke-media-1/media/native-audio-v1/audio/the-girl-from-ipanema-karaoke/0/index.m3u8"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="sound",NAME="Vocals 20%",DEFAULT=NO,AUTOSELECT=NO,CHANNELS="2",URI="https://gmyoung.github.io/karaoke-media-1/media/native-audio-v1/audio/the-girl-from-ipanema-karaoke/20/index.m3u8"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="sound",NAME="Vocals 40%",DEFAULT=NO,AUTOSELECT=NO,CHANNELS="2",URI="https://gmyoung.github.io/karaoke-media-1/media/native-audio-v1/audio/the-girl-from-ipanema-karaoke/40/index.m3u8"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="sound",NAME="Vocals 60%",DEFAULT=NO,AUTOSELECT=NO,CHANNELS="2",URI="https://gmyoung.github.io/karaoke-media-1/media/native-audio-v1/audio/the-girl-from-ipanema-karaoke/60/index.m3u8"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="sound",NAME="Vocals 80%",DEFAULT=NO,AUTOSELECT=NO,CHANNELS="2",URI="https://gmyoung.github.io/karaoke-media-1/media/native-audio-v1/audio/the-girl-from-ipanema-karaoke/80/index.m3u8"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="sound",NAME="Vocals 100%",DEFAULT=NO,AUTOSELECT=NO,CHANNELS="2",URI="https://gmyoung.github.io/karaoke-media-1/media/native-audio-v1/audio/the-girl-from-ipanema-karaoke/100/index.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=2184000,AVERAGE-BANDWIDTH=496104,RESOLUTION=640x360,FRAME-RATE=30.000,CODECS="avc1.64001f,mp4a.40.2",AUDIO="sound"
+https://gmyoung.github.io/media/streams-v4/the-girl-from-ipanema-karaoke/360/index.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=4735000,AVERAGE-BANDWIDTH=1049925,RESOLUTION=1280x720,FRAME-RATE=30.000,CODECS="avc1.64001f,mp4a.40.2",AUDIO="sound"
+https://gmyoung.github.io/media/streams-v4/the-girl-from-ipanema-karaoke/720/index.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=7111000,AVERAGE-BANDWIDTH=1552438,RESOLUTION=1920x1080,FRAME-RATE=30.000,CODECS="avc1.640028,mp4a.40.2",AUDIO="sound"
+https://gmyoung.github.io/media/streams-v4/the-girl-from-ipanema-karaoke/1080/index.m3u8
