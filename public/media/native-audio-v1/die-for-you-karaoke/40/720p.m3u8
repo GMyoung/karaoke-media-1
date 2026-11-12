@@ -1,0 +1,6 @@
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-INDEPENDENT-SEGMENTS
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="sound",NAME="Vocals 40%",DEFAULT=YES,AUTOSELECT=YES,CHANNELS="2",URI="https://gmyoung.github.io/karaoke-media-1/media/native-audio-v1/audio/die-for-you/40/index.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=1478000,AVERAGE-BANDWIDTH=982713,RESOLUTION=1280x720,FRAME-RATE=30.000,CODECS="avc1.64001f,mp4a.40.2",AUDIO="sound"
+https://gmyoung.github.io/media/streams-v1/die-for-you/720/index.m3u8

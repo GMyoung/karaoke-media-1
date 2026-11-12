@@ -11,6 +11,7 @@ Only `public/` is published. `public/index.html` links back to the player; `robo
 - `public/media/streams-v7/`: SLOW DANCING IN THE DARK, rebuilt directly from the original music video at its native frame rate, with higher-bitrate 720p/1080p renditions.
 - `public/media/streams-v8/`: Breathe, using the original music video at native 24 fps, with opening/end frame holds matching the existing karaoke soundtrack timeline.
 - `public/audio/`: aligned, prepared AAC/M4A soundtracks referenced by the main catalog.
+- `public/media/native-audio-v1/`: single-player HLS masters for all 17 catalog entries and four-second AAC fragments. Two-source songs offer 0/20/40/60/80/100% original-vocal mixes; karaoke-only songs retain their one soundtrack. Masters reuse the existing video renditions, including those published by the main site. Endpoints remux the aligned AAC without re-encoding; intermediate mixes use AAC 160 kbps. The Ipanema 0% endpoint preserves its prepared 35% Portuguese guide passages.
 - `scripts/check-public.py`: read-only validation of public file boundaries and sizes; emits JSON.
 - `.github/workflows/pages.yml`: pinned GitHub Actions workflow that validates and deploys only `public/`.
 
@@ -30,6 +31,10 @@ Prerequisites: Python 3.10+ for the local size check, Git, and an existing autho
 The remote repository is `GMyoung/karaoke-media-1`, with GitHub Pages configured to use GitHub Actions. Media preparation and main-catalog updates remain separate from this publishing workflow.
 
 ## Maintenance
+
+Reproduction helper: `py -3.12 -X utf8 E:\CodeX\instrumental-library\scripts\prepare-native-audio.py --volume E:\CodeX\karaoke-media-1\public --version native-audio-v2 --report-dir E:\CodeX\outputs\<new-production> --jobs 2`. Requires Python 3.12, FFmpeg/FFprobe, the local main checkout and prepared sources in this volume. It refuses an existing version; production commands, hashes, timeline metadata and catalog mappings stay in the report directory. The main catalog adds `streaming.integrated.mixes`; both native Safari HLS and hls.js consume these masters through one video element.
+
+The v1 release occupies 966,173,544 bytes across the complete public artifact. Future media additions need a new volume or a separately planned hosting migration; do not overwrite published media or grow this artifact beyond its cap.
 
 Keep versioned URLs stable and retain accepted masters and previous versions in local/Git history. Account for the complete `public/` directory before each release; move future additions to another same-origin satellite before reaching the cap. Media delivery remains subject to GitHub Pages and venue connectivity, so this layout does not guarantee uninterrupted playback under every network condition.
 
